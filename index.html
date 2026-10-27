@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hustle Free Collection | All your essentials in one place.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <link rel="icon" type="x-icon" href="images/icon.png">
+</head>
+<body>
+      <h2 id="developers">Students involved in creating this Prototype:</h2>
+        <ol start="1">
+            <li>PA106/G/28591/25 JAMES MWETI</li>
+            <li>PA106/G/28617/25 MBITHI BERNARD NDUNDA</li>
+            <li>PA106/G/28618/25 BRIAN KIPRONO</li>
+            <li>PA106/G/28619/25 PETER MACHARIA</li>
+            <li>PA106/G/28620/25 TROPHIMUS WARUI KABOGO</li>
+        </ol>
+  <div class="announcement">Hustle Free shopping. Dive in and discover our catalogue.</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Hustle Free Collection home"><span class="brand-mark">HF</span><span>Hustle<span class="brand-accent">Free Collection</span><small>ALL YOUR ESSENTIALS IN ONE PLACE.</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="#products">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="cart-link" href="cart.html">🛒 Cart <span id="cartCount" class="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">GET INTO SHOPPING</span>
+        <h1>Less Prices.<br><span>More value.</span></h1>
+        <p>Find everything that you need. From daily essentials to food, and lifestyle. Find and shop what matches your vibe.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">Explore catalogue <span>→</span></a>
+          <a class="text-link" href="about.html">Get to know us ↗</a>
+        </div>
+        <div class="hero-note">
+        <span><strong>All your essentials at an affordable price.</strong><br><small>Shop smarter.</small></span></div>
+      </div>
+      <div class="hero-art">
+        <div>
+        <img src="images/laptop.jpg" alt="Laptop">
+        </div>
+      </div>
+    </section> 
+
+    <section class="section products-section" id="products">
+      <div class="section-heading"><div><span class="eyebrow">FIND YOUR MATCH</span><h2>Our Today's Top Picks<span class="heading-dot">.</span></h2><p>All you need in one place.</p></div><a href="products.html" class="text-link">View all products ↗</a></div>
+    <div class="filters" id="categoryFilters">
+        <button class="filter-btn active" data-category="All">All items</button>
+        <button class="filter-btn" data-category="Study">Study</button>
+        <button class="filter-btn" data-category="Electronics">Electronics</button>
+        <button class="filter-btn" data-category="Style">Style</button>
+        <button class="filter-btn" data-category="Lifestyle">Lifestyle</button>
+        <button class="filter-btn" data-category="Snacks">Snacks</button>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+    </section>
+  </main>
+
+
+
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">HF</span><span>Hustle<span class="brand-accent">Free Collection</span><small>ALL YOUR ESSENTIALS IN ONE PLACE.</small></span></a>
+      <p>Shopping brought closer to you.</p>
+    <div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Shopping cart</a>
+    </div> <small class="copyright">© <span id="year"></span><a href="about.html#developers">Group V</a></small>
+</body>
+</html>

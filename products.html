@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products | Hustle Free Collection</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
+        <script src="js/products.js" defer></script>
+        <script src="js/cart.js" defer></script>
+        <link rel="icon" type="x-icon" href="images/icon.png">
+    </head>
+
+<body>
+    <div class="announcement">Hustle Free shopping. Dive in and discover our collections.</div>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark">HF</span><span>Hustle<span class="brand-accent">Free Collection</span><small>ALL YOUR ESSENTIALS IN ONE PLACE</small></span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a class="active" href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="cart-link" href="cart.html">🛒 Cart <span id="cartCount" class="cart-count">0</span></a>
+        </nav>
+    </header>
+
+
+<main class="page-wrap"><span class="eyebrow">BROWSE THE CATALOGUE</span>
+    <h1 class="page-title">Find your perfect taste<span class="heading-dot">.</span></h1>
+    <p class="page-intro">Fill your cart with your favourite picks.</p>
+    <label class="search-box"><input type="search" id="productSearch" placeholder="Search products..." aria-label="Search products"></label> <!-- to add the search functionality in the webpage -->
+    <div class="filters" id="categoryFilters">
+        <button class="filter-btn active" data-category="All">All items</button>
+        <button class="filter-btn" data-category="Study">Study</button>
+        <button class="filter-btn" data-category="Electronics">Electronics</button>
+        <button class="filter-btn" data-category="Style">Style</button>
+        <button class="filter-btn" data-category="Lifestyle">Lifestyle</button>
+        <button class="filter-btn" data-category="Snacks">Snacks</button>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+
+</main>
+
+
+<footer class="site-footer">
+   <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark">HF</span><span>Hustle<span class="brand-accent">Free Collection</span><small>ALL YOUR ESSENTIALS IN ONE PLACE.</small></span>
+    </a>
+    <p>Shopping brought closer to you.</p>
+    <div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Shopping cart</a>
+    </div> <small class="copyright">© <span id="year"></span><a href="about.html#developers">Group V</a></small>
+
+</footer>
+</body>
+</html>

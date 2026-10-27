@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | Hustle Free Collection</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
+        <script src="js/cart.js" defer></script>
+        <link rel="icon" type="x-icon" href="images/icon.png">
+    </head>
+
+
+<body>
+    <div class="announcement">Hustle Free shopping. Dive in and discover our collections.</div>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark">HF</span><span>Hustle<span class="brand-accent">Free Collection</span><small>ALL YOUR ESSENTIALS IN ONE PLACE.</small></span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a class="cart-link" href="cart.html">🛒 Cart <span id="cartCount" class="cart-count">0</span></a>
+        </nav>
+    </header>
+
+
+<main class="page-wrap"><span class="eyebrow">SEND US YOUR LOVE:</span>
+    <h1 class="page-title">We'd love to hear from you<span class="heading-dot">.</span></h1>
+    <p class="page-intro">Please leave your feedback in the form below.</p>
+    <form class="contact-form" id="contactForm">
+        <label>Your name<input name="name" required placeholder="Enter your name"></label>
+        <label>Email address<input type="email" name="email" required placeholder="you@example.com"></label>
+        <label>Message<textarea name="message" required rows="5" placeholder="Write your message..."></textarea></label>
+        <button class="btn btn-primary" type="submit">Send your message →</button>
+        <p id="contactfeedback"></p>
+    </form>
+</main>
+
+
+<footer class="site-footer">
+    <a class="brand footer-brand" href="index.html"> 
+        <span class="brand-mark">HF</span><span>Hustle<span class="brand-accent">Free Collection</span><small>ALL YOUR ESSENTIALS IN ONE PLACE.</small></span>
+    </a>
+    <p>Shopping brought closer to you.</p>
+     <small class="copyright">© <span id="year"></span><a href="about.html#developers">Group V</a></small>
+</footer>
+</body>
+</html>
