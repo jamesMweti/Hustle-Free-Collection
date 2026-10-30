@@ -37,7 +37,7 @@ function renderCart() {
         <h2>Your cart is empty</h2>
         <p>Please visit our Product Catalogue and choose your products.</p>
         <a class="btn btn-primary" href="products.html">
-          Explore catalogue →
+          Explore catalogue
         </a>
       </div>`;
     return;
@@ -103,12 +103,12 @@ function renderCart() {
       </div>
 
       <a class="btn btn-primary" href="checkout.html">
-        Confirm your Picks →
+        Confirm your Picks
       </a>
 
       <a class="text-link" href="products.html"
         style="display:block;text-align:center;margin-top:14px">
-        ← Keep shopping
+        Keep shopping
       </a>
     </aside>
   `;
@@ -134,7 +134,7 @@ function renderCart() {
     if (!root) return;
     const items = cartEntries();
     if (!items.length) { root.innerHTML = `<div class="empty-state"><span>🛒</span><h2>You have picked nothing.</h2><p>Please explore our catalogue and add your products.</p><a class="btn btn-primary" href="products.html">Explore Catalogue →</a></div>`; return; }
-    root.innerHTML = `<div class="checkout-grid"><form class="checkout-form" id="checkoutForm"><h2>Delivery details</h2><label class="form-field">Full name<input name="name" required autocomplete="name" placeholder="Your full name"></label><label class="form-field">Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label><label class="form-field">Delivery Location<input name="location" required placeholder="Your delivery point"></label><label class="form-field">Phone number (optional)<input name="phone" type="tel" placeholder="e.g. 07XX XXX XXX"></label><button class="btn btn-primary" type="submit">Place Your Order →</button><p class="info">Please ensure you provide your correct details for easier and correct delivery. Thank you!</p></form><aside class="order-summary"><h2>Your order</h2>${items.map(p=>`<div class="summary-line"><span> ${p.name} × ${p.qty}</span><strong>${format(p.price*p.qty)}</strong></div>`).join("")}<div class="summary-line summary-total"><span>Total Price</span><strong>${format(subtotal(items))}</strong></div></aside></div>`;
+    root.innerHTML = `<div class="checkout-grid"><form class="checkout-form" id="checkoutForm"><h2>Delivery details</h2><label class="form-field">Full name<input name="name" required autocomplete="name" placeholder="Your full name"></label><label class="form-field">Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label><label class="form-field">Delivery Location<input name="location" required placeholder="Your delivery point"></label><label class="form-field">Phone number (optional)<input name="phone" type="tel" placeholder="e.g. 07XX XXX XXX"></label><button class="btn btn-primary" type="submit">Place Your Order</button><p class="info">Please ensure you provide your correct details for easier and correct delivery. Thank you!</p></form><aside class="order-summary"><h2>Your order</h2>${items.map(p=>`<div class="summary-line"><span> ${p.name} × ${p.qty}</span><strong>${format(p.price*p.qty)}</strong></div>`).join("")}<div class="summary-line summary-total"><span>Total Price</span><strong>${format(subtotal(items))}</strong></div></aside></div>`;
     root.querySelector("#checkoutForm").addEventListener("submit", e => {
       e.preventDefault();
       const form = new FormData(e.currentTarget);
