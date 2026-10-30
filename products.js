@@ -1,11 +1,11 @@
 const HUSTLEFREE_PRODUCTS = [
-  {id:1,name:"Campus Backpack",category:"Style",price:1200,badge:"Everyone's Pick",description:"Carry your books to lectures and your laptop during leisure.",tone:"style",image:"images/Backpack.jpg"},
-  {id:2,name:"Scientific Calculator",category:"Study",price:900,badge:"Study essential",description:"Stress less as you do your assignments and complex calculations.",tone:"study",image:"images/Calculator.jpg"},
-  {id:3,name:"Wireless Mouse",category:"Tech",price:800,badge:"Electonics",description:"Hasten working on your laptop.",tone:"electronics",image:"images/mouse.jpg"},
-  {id:4,name:"Sneakers",category:"Style",price:1800,badge:"Fresh style",description:"Drip around with the lattest fashion.",tone:"style",image:"images/sneakers.jpg"},
-  {id:5,name:"Wrist Watch",category:"Lifestyle",price:650,badge:"New Arrivals",description:"Save your time and look elegant.",tone:"lifestyle",image:"images/Watch.jpg"},
-  {id:6,name:"Pizza", category:"Snacks",price:650,badge:"Get some snacks",description:"Indulge in the mmm! with a our tasty pizza.",tone:"snacks",image:"images/Pizza.jpg"},
-  {id:7,name:"Laptop", category:"Electronics",price:32000,badge:"Experince first hand moments",description:"Revise clearly, and watch your entertainment on the wide screen.",tone:"electronics",image:"images/laptop.jpg"}
+  {id:1,name:"Campus Backpack",category:"Style",price:1200,badge:"Everyone's Pick",description:"Carry your books to lectures and your laptop during leisure.",tone:"style",image:"Backpack.jpg"},
+  {id:2,name:"Scientific Calculator",category:"Study",price:900,badge:"Study essential",description:"Stress less as you do your assignments and complex calculations.",tone:"study",image:"Calculator.jpg"},
+  {id:3,name:"Wireless Mouse",category:"Tech",price:800,badge:"Electonics",description:"Hasten working on your laptop.",tone:"electronics",image:"mouse.jpg"},
+  {id:4,name:"Sneakers",category:"Style",price:1800,badge:"Fresh style",description:"Drip around with the lattest fashion.",tone:"style",image:"sneakers.jpg"},
+  {id:5,name:"Wrist Watch",category:"Lifestyle",price:650,badge:"New Arrivals",description:"Save your time and look elegant.",tone:"lifestyle",image:"Watch.jpg"},
+  {id:6,name:"Pizza", category:"Snacks",price:650,badge:"Get some snacks",description:"Indulge in the mmm! with a our tasty pizza.",tone:"snacks",image:"Pizza.jpg"},
+  {id:7,name:"Laptop", category:"Electronics",price:32000,badge:"Experince first hand moments",description:"Revise clearly, and watch your entertainment on the wide screen.",tone:"electronics",image:"laptop.jpg"}
 ];
 
 window.HustleFreeProducts = HUSTLEFREE_PRODUCTS;
